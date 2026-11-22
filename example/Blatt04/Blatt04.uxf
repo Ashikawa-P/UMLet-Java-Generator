@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>27</x>
+      <y>17</y>
+      <w>684</w>
+      <h>928</h>
+    </coordinates>
+    <panel_attributes>layer=-1
+Blatt04</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>385</y>
+      <w>269</w>
+      <h>268</h>
+    </coordinates>
+    <panel_attributes>/Dreieck/
+--
++ a: double
++ b: double
++ c: double
+--
+/+ hoehe(): double/
+/+ berechneWinkel(): double[]/
++ flaeche(): double
++ winkel(): double
++ umfang(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>55</y>
+      <w>269</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Flaecheninhalt
+--
+_+ pi: double = 3.14159265359_
+--
++ hoehe(): double
++ flaeche(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>55</x>
+      <y>803</y>
+      <w>269</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>GleichschenkligesDreieck
+--
++ hoehe(): double
++ berechneWinkel(): double[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>803</y>
+      <w>269</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>GleichseitigesDreieck
+--
++ hoehe(): double
++ berechneWinkel(): double[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>358</x>
+      <y>225</y>
+      <w>20</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10;10;10;160</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>179</x>
+      <y>643</y>
+      <w>199</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>189;10;10;160</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>358</x>
+      <y>643</y>
+      <w>200</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10;10;190;160</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,34 @@
+@startuml
+skinparam classAttributeIconSize 0
+top to bottom direction
+
+package "Blatt04" {
+  abstract class "Dreieck" as T0 {
+    + a: double
+    + b: double
+    + c: double
+    {abstract} + hoehe(): double
+    {abstract} + berechneWinkel(): double[]
+    + flaeche(): double
+    + winkel(): double
+    + umfang(): double
+  }
+  interface "Flaecheninhalt" as T1 {
+    {static} + pi: double = 3.14159265359
+    + hoehe(): double
+    + flaeche(): double
+  }
+  class "GleichschenkligesDreieck" as T2 {
+    + hoehe(): double
+    + berechneWinkel(): double[]
+  }
+  class "GleichseitigesDreieck" as T3 {
+    + hoehe(): double
+    + berechneWinkel(): double[]
+  }
+}
+
+T1 <|.. T0
+T0 <|-- T2
+T0 <|-- T3
+@enduml
