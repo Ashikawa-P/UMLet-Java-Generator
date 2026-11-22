@@ -1,4 +1,4 @@
-# IntelliJ UML generator
+# UMLet Java Generator
 
 This tool generates both an editable UMLet class diagram (`.uxf`) and a PlantUML file (`.puml`) from Java source files. Both files contain the same types, members, and relationships.
 
